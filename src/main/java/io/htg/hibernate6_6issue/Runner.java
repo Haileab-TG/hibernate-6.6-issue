@@ -18,7 +18,7 @@ public class Runner implements CommandLineRunner {
         Person person = new Person();
         person.setName("John Doe");
         person.setVersion(1);
-//        person.setId(1L);
+        person.setId(1L);
         personRepo.saveAndFlush(person);
         System.out.println("Person saved" + personRepo.findById(1L).get());
     }
